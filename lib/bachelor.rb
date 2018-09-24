@@ -40,7 +40,7 @@ def get_occupation(data, hometown)
     array.each do |contestant|
       contestant.each do |x,y|
         if y = hometown
-          return contestant["occupation"]
+          return contestant["occupation"].split('').last
         end
       end
     end
