@@ -55,6 +55,7 @@ def get_average_age_for_season(data, season)
     contestant.each do |x,y|
       if x == "age"
         counter += 1 
+        age += y.to_f
       end
     end
   end
