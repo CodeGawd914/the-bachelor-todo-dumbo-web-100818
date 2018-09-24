@@ -41,8 +41,8 @@ def get_occupation(data, hometown)
     array.each do |contestant|
       contestant.each do |x,y|
         if y = hometown
-          return contestant["occupation"]
           binding.pry
+          return contestant["occupation"]
         end
       end
     end
