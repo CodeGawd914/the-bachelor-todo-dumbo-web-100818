@@ -1,3 +1,4 @@
+require 'pry'
 def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
     contestant.each do |x,y|
@@ -40,7 +41,8 @@ def get_occupation(data, hometown)
     array.each do |contestant|
       contestant.each do |x,y|
         if y = hometown
-          return x["occupation"]
+          return contestant["occupation"]
+          binding.pry
         end
       end
     end
