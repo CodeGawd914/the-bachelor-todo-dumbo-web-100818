@@ -28,6 +28,10 @@ def count_contestants_by_hometown(data, hometown)
       contestant.each do |x,y|
         if y == hometown
           counter += 1
+        end
+      end
+    end
+  end
 end
 
 def get_occupation(data, hometown)
